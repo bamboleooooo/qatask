@@ -1,27 +1,30 @@
-# QA Automation Task
+# QA Automation Task – SauceDemo E2E Tests
 
-Welcome to the QA Automation task!
-Here are some guidelines in order to make run and work with it.
+This repository contains an end-to-end (E2E) test suite for [saucedemo.com](https://www.saucedemo.com/) using **Playwright**.  
+The tests cover login flow, product purchase flow, and UI validations such as header and footer checks.
 
-## Pre-requisites
+This project was created as part of a QA Automation recruitment task.
 
-- You will need to have `node` and `npm` installed in your system. We tested it with the following versions:
+---
 
-```shell
-❯ npm --version
-10.5.0
-❯ node --version
-v20.11.1
-```
+## ✅ Prerequisites
 
-## Steps
+Make sure you have the following installed:
+
+- `node` and `npm` (tested versions):
+
+````sh
+node --version     # v20.11.1
+npm --version      # 10.5.0
+
+## ⚙️ Installation & Running Tests
 
 - First Clone the repository to your local machine:
 
 ```shell
 git clone https://github.com/bamboleooooo/qatask.git
 cd qatask
-```
+````
 
 - Once you have the repo, you will need to install the dependencies:
 
@@ -35,4 +38,6 @@ npm install
 npx playwright install
 ```
 
-- You can also run the tests with the following command `npm run test-headless` or `npm run test-headed`
+- You can run the tests with the following command
+  - Headed mode (with browser UI): `npm run test-headed`
+  - Headless mode (no UI, recommended for CI): `npm run test-headless`
