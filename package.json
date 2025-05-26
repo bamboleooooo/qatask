@@ -20,6 +20,10 @@
     "typescript-eslint": "^8.32.1"
   },
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test --ui",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test-headed": "npx playwright test --headed ",
+    "test-headless": "npx playwright test"
   }
 }
