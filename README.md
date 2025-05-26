@@ -19,7 +19,7 @@ npm --version      # 10.5.0
 
 ---
 
-### ⚙️ Installation & Running Tests
+## ⚙️ Installation & Running Tests
 
 - First Clone the repository to your local machine:
 
