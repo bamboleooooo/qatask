@@ -17,7 +17,9 @@ Make sure you have the following installed:
 node --version     # v20.11.1
 npm --version      # 10.5.0
 
-## ⚙️ Installation & Running Tests
+---
+
+### ⚙️ Installation & Running Tests
 
 - First Clone the repository to your local machine:
 

@@ -10,7 +10,7 @@ export class ListItemComponent {
   constructor(root: Locator) {
     this.root = root
     this.productName = root.locator('[data-test="inventory-item-name"]')
-    this.productPrice = root.locator('[data-test="inventory-item-price"]')
+    this.productPrice= root.locator('[data-test="inventory-item-price"]')
     this.addToCartButton = root.getByRole('button', { name: 'Add to cart' })
     this.removeFromCartButton = root.getByRole('button', { name: 'Remove' })
   }
@@ -19,7 +19,7 @@ export class ListItemComponent {
     return this.productName.innerText()
   }
   async getPrice(): Promise<string | null> {
-    return (await this.productPrice.innerText()).replace('$', '')
+    return (await this.productPrice.innerText()).replace('$', '').trim()
   }
   async clickAddToCart(): Promise<void> {
     await this.addToCartButton.click()
