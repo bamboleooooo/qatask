@@ -16,6 +16,7 @@ Make sure you have the following installed:
 ````sh
 node --version     # v20.11.1
 npm --version      # 10.5.0
+````  
 
 ---
 
